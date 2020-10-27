@@ -10,7 +10,7 @@ app.use("/message", require("./routes/message"))
 // app.use(require("./routes/default"))
 
 app.listen(config.port, () => {
-	console.log("Server running on port " + config.port)
+    console.log("Server running on port " + config.port)
 }).on('error', error => {
     console.log(error)
     process.exit(1);
